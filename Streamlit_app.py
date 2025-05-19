@@ -22,7 +22,7 @@ Enter the values below to get a prediction, feature importance, SHAP explanation
 # --- Load and Preprocess the Real Dataset ---
 # Update the path to where dataset.csv is located in your environment
 try:
-    df = pd.read_csv("C:\Users\arpit\Manufacturing Analyser\dataset.csv")
+    df = pd.read_csv("dataset.csv")  # Ideal for deployed environments
 except FileNotFoundError:
     st.error("Dataset file 'dataset.csv' not found. Please ensure it is in the project directory.")
     st.stop()
